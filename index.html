@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Akshu 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@600;700&family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<canvas id="pcanvas"></canvas>
+<div class="stars" id="stars"></div>
+<div class="floaters" id="floaters"></div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <div class="lb-inner">
+    <button class="lb-close" id="lb-close">✕</button>
+    <button class="lb-nav prev" id="lb-prev">‹</button>
+    <img id="lb-img" src="" alt="Akshu">
+    <button class="lb-nav next" id="lb-next">›</button>
+    <div class="lb-word">
+      <span class="lb-word-emoji" id="lb-emoji"></span>
+      <span class="lb-word-text" id="lb-word"></span>
+    </div>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="aurora"></div>
+  <div class="hero-content">
+    <div class="hero-label">🎂 &nbsp; It's her day &nbsp; 🎂</div>
+    <h1 class="hero-name">Akshu</h1>
+    <p class="hero-tagline">Life & Reels — making you feel things</p>
+    <div class="hero-bio">
+      <span class="bio-pill">life</span>
+      <span class="bio-pill">thoughts</span>
+      <span class="bio-pill">little chaos</span>
+    </div>
+    <a class="insta-link" href="https://instagram.com/akshuuu.diaries" target="_blank">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="white">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      @akshuuu.diaries
+    </a>
+  </div>
+  <div class="hero-scroll">scroll<div class="hero-scroll-line"></div></div>
+</section>
+
+<!-- GALLERY -->
+<section class="section reveal">
+  <div class="sec-header">
+    <p class="sec-eyebrow">✦ the reel creator ✦</p>
+    <h2 class="sec-title">Her Beautiful Frames</h2>
+  </div>
+  <div class="sec-divider"></div>
+  <div class="masonry" id="gallery"></div>
+</section>
+
+<!-- WISHES -->
+<section class="section reveal">
+  <div class="sec-header">
+    <p class="sec-eyebrow">✦ because she deserves it ✦</p>
+    <h2 class="sec-title">Birthday Wishes</h2>
+  </div>
+  <div class="sec-divider"></div>
+  <div class="wish-wrap">
+    <div class="wish-card">
+      <span class="wish-card-icon">🌸</span>
+      <div class="wish-card-title">Always Glowing</div>
+      <div class="wish-card-text">May your light never dim and your energy always attract what you truly deserve.</div>
+    </div>
+    <div class="wish-card">
+      <span class="wish-card-icon">🎬</span>
+      <div class="wish-card-title">Keep Creating</div>
+      <div class="wish-card-text">Your reels make people feel things. Keep capturing life exactly as you see it.</div>
+    </div>
+    <div class="wish-card">
+      <span class="wish-card-icon">💫</span>
+      <div class="wish-card-title">Pure Chaos & Joy</div>
+      <div class="wish-card-text">Life, thoughts, and little chaos — the perfect recipe for someone unforgettable.</div>
+    </div>
+    <div class="wish-card">
+      <span class="wish-card-icon">👑</span>
+      <div class="wish-card-title">Born Iconic</div>
+      <div class="wish-card-text">This year, may every moment feel as legendary as you actually are.</div>
+    </div>
+  </div>
+  <div class="big-wish">
+    <p class="big-wish-quote">
+      To <em>Akshu</em> — the girl who turns ordinary moments into <em>reels worth rewatching</em>,
+      whose life is beautifully messy and perfectly her own.<br><br>
+      May this birthday be the beginning of your most <em>radiant</em> chapter yet.
+      Keep being exactly who you are — chaotic, magical, and <em>completely unforgettable.</em> 🌸
+    </p>
+    <div class="big-wish-sign">Happy Birthday, Akshu! 🎂✨</div>
+  </div>
+</section>
+
+<footer>made with <span>♥</span> for <span>akshuuu.diaries</span></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
